@@ -6,10 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "eslint . --ext .js,.ts,.tsx --fix",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "format": "prettier --write .",
     "prepare": "husky install",
-    "test": "echo \"No tests defined yet\" && exit 0"
+    "test": "echo \"No tests defined yet\" && exit 0",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "next": "15.3.3",
@@ -19,28 +21,45 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@eslint/eslintrc": "^3",
-    "@eslint/js": "^9.28.0",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@typescript-eslint/eslint-plugin": "^8.33.0",
-    "@typescript-eslint/parser": "^8.33.0",
+    "@eslint/eslintrc": "^3.0.1",
+    "@eslint/js": "^9.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^20.11.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.28.0",
-    "eslint-config-next": "^15.3.3",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.2.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "15.3.3",
+    "eslint-plugin-jsonc": "^2.11.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-yml": "^1.11.0",
+    "eslint-plugin-react": "^7.33.0",
     "husky": "^8.0.3",
-    "prettier": "^3.5.3",
-    "tailwindcss": "^4",
-    "typescript": "^5",
-    "typescript-eslint": "^8.33.0"
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.4.5",
+    "gitleaks": "^8.18.1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
   }
 }

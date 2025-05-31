@@ -1,9 +1,9 @@
 ---
 name: 💡 Feature Request
 about: Suggest an idea for this project
-title: "[FEATURE] Describe your feature concisely"
+title: '[FEATURE] Describe your feature concisely'
 labels: enhancement
-assignees: ""
+assignees: ''
 ---
 
 **Is your feature request related to a problem? Please describe.** A clear and

@@ -1,9 +1,9 @@
 ---
 name: 🚀 Task / Enhancement
 about: Suggest a small task or an improvement that isn't a full feature
-title: "[TASK] Describe the task or enhancement briefly"
+title: '[TASK] Describe the task or enhancement briefly'
 labels: enhancement
-assignees: ""
+assignees: ''
 ---
 
 **Task Description** Provide a clear and concise description of the task or

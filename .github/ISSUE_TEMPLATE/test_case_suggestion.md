@@ -1,9 +1,9 @@
 ---
 name: 🧪 Test Case Suggestion
 about: Suggest a test case to improve coverage
-title: "[TEST] Suggestion: [Name of the Test]"
+title: '[TEST] Suggestion: [Name of the Test]'
 labels: testing
-assignees: ""
+assignees: ''
 ---
 
 **Describe the test case** What functionality or edge case should be tested?

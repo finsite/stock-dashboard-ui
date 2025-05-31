@@ -1,9 +1,9 @@
 ---
 name: 📖 Documentation Update
 about: Suggest an improvement or correction to the documentation
-title: "[DOCS] Describe the update concisely"
+title: '[DOCS] Describe the update concisely'
 labels: documentation
-assignees: ""
+assignees: ''
 ---
 
 **Describe the problem** What part of the documentation is unclear, missing, or
