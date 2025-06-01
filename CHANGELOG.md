@@ -1,22 +1,15 @@
 # Changelog
 
-## [0.0.0] - 2025-05-08
+All notable changes to this project will be documented in this file.
+
+The format is based on [Conventional Commits](https://www.conventionalcommits.org),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.0] - 2025-05-31
 
 ### Added
 
-- Initial project structure cloned from template_python
-- Custom configuration and module setup for `stock-quant-arbitrage`
-
-## v0.1.0 (2025-05-19)
-
-### Feat
-
-- **processor**: verify poller functionality
-
-## v0.0.1 (2025-05-19)
-
-### Fix
-
-- **docs**: initial repos setup
-
-## v0.0.0 (2025-05-18)
+- Initial scaffold for stock dashboard React UI.
+- Setup with Next.js, TailwindCSS, TypeScript, ESLint, Prettier.
+- Git hooks via Husky and Commitlint.
+- Dockerfile and GitHub Actions CI workflows.

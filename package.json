@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "clean": "rm -rf .next node_modules dist",
+    "dev": "next dev --turbopack",
     "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prepare": "husky install",
+    "preview": "next start",
     "test": "echo \"No tests defined yet\" && exit 0",
     "type-check": "tsc --noEmit"
   },
@@ -21,29 +22,27 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@eslint/eslintrc": "^3.0.1",
-    "@eslint/js": "^9.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
-    "@types/node": "^20.11.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.55.0",
-    "@typescript-eslint/parser": "^8.55.0",
+    "@eslint/js": "^9.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.0.0",
+    "eslint": "^8.57.1",
     "eslint-config-next": "15.3.3",
-    "eslint-plugin-jsonc": "^2.11.0",
-    "eslint-plugin-markdown": "^3.0.1",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-yml": "^1.11.0",
-    "eslint-plugin-react": "^7.33.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.5.7",
+    "stylelint": "^15.11.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-prettier": "^2.0.0",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.4.5",
-    "gitleaks": "^8.18.1"
+    "typescript": "^5.4.5"
   },
   "config": {
     "commitizen": {
@@ -55,11 +54,14 @@
       "eslint --fix",
       "prettier --write"
     ],
-    "*.{json,yml,yaml}": [
+    "*.{json,yml,yaml,css,scss,sass}": [
       "prettier --write"
     ],
     "*.md": [
       "prettier --write"
+    ],
+    "*.{css,scss,sass}": [
+      "stylelint --fix"
     ]
   }
 }

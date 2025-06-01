@@ -1,8 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm test
-npx tsc --noEmit
-npx eslint . --ext .ts,.tsx
-npx prettier --check .
 npx lint-staged
