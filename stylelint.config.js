@@ -1,7 +1,10 @@
-export default {
-  extends: ['stylelint-config-standard', 'stylelint-prettier'],
-  plugins: ['stylelint-prettier'],
-  rules: {
-    'prettier/prettier': true,
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
   },
+  plugins: [],
 };
