@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 stock-dashboard-ui
 
-## Getting Started
+[![Build](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/build.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/build.yml)
+[![Lint](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/lint.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/lint.yml)
+[![Tests](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/test.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/test.yml)
+[![Release](https://img.shields.io/github/v/release/markq/stock-dashboard-ui)](https://github.com/markq/stock-dashboard-ui/releases)
+[![License](https://img.shields.io/github/license/markq/stock-dashboard-ui)](./LICENSE)
 
-First, run the development server:
+---
+
+## 📦 Overview
+
+**stock-dashboard-ui** is a modern, high-performance web frontend built with:
+
+- ⚛️ React 19
+- 🚀 Next.js 15
+- 🎨 Tailwind CSS
+- ✨ TypeScript-first architecture
+- 🐳 Dockerized and CI-integrated
+
+This UI is part of a broader stock analysis and visualization platform.
+
+---
+
+## 🛠️ Local Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Lint and fix
+npm run lint:fix
+
+# Format code
+npm run format
+
+# Type check
+npm run type-check
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Testing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Run unit tests (if implemented)
+npm test
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Release Workflow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses **Commitizen + standard-version** to manage releases.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Bump version & changelog manually
+make release
+```
 
-## Deploy on Vercel
+This will:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Generate/update CHANGELOG.md
+- Bump the version in package.json
+- Push the tag and changes to GitHub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Automatic releases also occur via GitHub Actions when pushing to `main`.
+
+---
+
+## 🐳 Docker Support
+
+Build a production-ready Docker image:
+
+```bash
+docker build -t stock-dashboard-ui .
+```
+
+Images are published to:
+
+```
+ghcr.io/markq/stock-dashboard-ui
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+---
+
+## 🙋‍♂️ Maintainer
+
+**Mark Quinn**
+[https://github.com/markq](https://github.com/markq)
+
+```
+
+---
+
+Let me know if you'd like this exported as a file or saved into your repo structure.
+```

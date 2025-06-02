@@ -6,6 +6,9 @@
     "build": "next build",
     "clean": "rm -rf .next node_modules dist",
     "dev": "next dev --turbopack",
+    "docs": "npm run start --workspace docs",
+    "docs:build": "npm run build --workspace docs",
+    "docs:deploy": "npm run deploy --workspace docs",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -13,8 +16,15 @@
     "stylelint": "stylelint '**/*.{css,scss,sass}'",
     "prepare": "husky install",
     "preview": "next start",
-    "test": "echo \"No tests defined yet\" && exit 0",
-    "type-check": "tsc --noEmit"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "type-check": "tsc --noEmit",
+    "cz": "cz",
+    "changelog": "standard-version --skip.bump --skip.tag --skip.commit",
+    "release": "standard-version",
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major"
   },
   "dependencies": {
     "next": "15.3.3",
@@ -26,10 +36,15 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.28.0",
     "@tailwindcss/postcss": "^4.1.8",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "19.1.6",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^4.5.0",
     "autoprefixer": "^10.4.21",
+    "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.3.3",
@@ -39,14 +54,17 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.2.0",
     "husky": "^8.0.3",
+    "jsdom": "^26.1.0",
     "lint-staged": "^15.2.0",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.5.7",
+    "standard-version": "^9.5.0",
     "stylelint": "^16.1.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-prettier": "^2.0.0",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^3.2.0"
   },
   "config": {
     "commitizen": {
@@ -54,7 +72,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": [
+    "src/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "docs/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -64,6 +86,39 @@
     ],
     "*.{json,yml,yaml,md}": [
       "prettier --write"
+    ]
+  },
+  "standard-version": {
+    "header": "# 📦 Changelog",
+    "types": [
+      {
+        "type": "feat",
+        "section": "✨ Features"
+      },
+      {
+        "type": "fix",
+        "section": "🐛 Bug Fixes"
+      },
+      {
+        "type": "chore",
+        "section": "🧹 Maintenance"
+      },
+      {
+        "type": "docs",
+        "section": "📘 Documentation"
+      },
+      {
+        "type": "style",
+        "section": "🎨 Styling"
+      },
+      {
+        "type": "refactor",
+        "section": "🛠 Refactors"
+      },
+      {
+        "type": "test",
+        "section": "🧪 Tests"
+      }
     ]
   }
 }

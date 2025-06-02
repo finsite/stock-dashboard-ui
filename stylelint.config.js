@@ -1,7 +1,6 @@
 module.exports = {
   extends: ['stylelint-config-standard'],
-  plugins: ['stylelint-prettier'],
   rules: {
-    'prettier/prettier': true,
+    'selector-class-pattern': null, // allow camelCase for CSS Modules
   },
 };
