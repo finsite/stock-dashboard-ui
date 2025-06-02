@@ -28,3 +28,9 @@ jobs:
         with:
           name: sbom
           path: sbom.json
+
+      - name: Upload to GitHub Release (optional)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: sbom.json          

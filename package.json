@@ -6,7 +6,7 @@
     "build": "next build",
     "clean": "rm -rf .next node_modules dist",
     "dev": "next dev --turbopack",
-    "check:licenses": "license-checker --summary --onlyAllow='MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause'",
+    "check:licenses": "license-checker --summary --onlyAllow=MIT*,Apache-2.0,BSD-2-Clause,BSD-3-Clause",
     "docs": "npm run start --workspace docs",
     "docs:build": "npm run build --workspace docs",
     "docs:deploy": "npm run deploy --workspace docs",
