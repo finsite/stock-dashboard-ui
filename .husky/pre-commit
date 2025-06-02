@@ -4,4 +4,7 @@
 echo "🔒 Running Gitleaks scan..."
 gitleaks detect --no-git -v --redact || exit 1
 
+echo "🔎 Verifying dependency licenses..."
+npm run check:licenses || exit 1
+
 npx lint-staged

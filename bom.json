@@ -1,0 +1,984 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.3",
+  "serialNumber": "urn:uuid:193bf382-826d-48a9-8db7-6f40884030fd",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-06-02T17:52:41.802Z",
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "Node.js module",
+        "version": "3.10.6"
+      }
+    ],
+    "component": {
+      "type": "library",
+      "bom-ref": "pkg:npm/stock-dashboard-ui@0.1.0",
+      "name": "stock-dashboard-ui",
+      "version": "0.1.0",
+      "description": "[![Build](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/build.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/build.yml) [![Lint](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/lint.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/lint.yml) [![Tests](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/test.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/test.yml) [![Release](https://img.shields.io/github/v/release/markq/stock-dashboard-ui)](https://github.com/markq/stock-dashboard-ui/releases) [![License](https://img.shields.io/github/license/markq/stock-dashboard-ui)](./LICENSE)",
+      "purl": "pkg:npm/stock-dashboard-ui@0.1.0"
+    }
+  },
+  "components": [
+    {
+      "type": "framework",
+      "bom-ref": "pkg:npm/next@15.3.3",
+      "name": "next",
+      "version": "15.3.3",
+      "description": "The React Framework",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/next@15.3.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://nextjs.org"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/next.js/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/next.js.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/%40next/env@15.3.3",
+      "author": "Next.js Team",
+      "group": "@next",
+      "name": "env",
+      "version": "15.3.3",
+      "description": "Next.js dotenv file loading",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40next/env@15.3.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/vercel/next.js#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/next.js/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/next.js.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/%40swc/counter@0.1.3",
+      "author": "강동윤",
+      "group": "@swc",
+      "name": "counter",
+      "version": "0.1.3",
+      "description": "Downloade counter for the swc project",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40swc/counter@0.1.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://swc.rs"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/swc-project/swc/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/swc-project/pkgs.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/%40swc/helpers@0.5.15",
+      "author": "강동윤",
+      "group": "@swc",
+      "name": "helpers",
+      "version": "0.5.15",
+      "description": "External helpers for the swc project.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40swc/helpers@0.5.15",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://swc.rs"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/swc-project/swc/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/swc-project/swc.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/tslib@2.8.1",
+      "author": "Microsoft Corp.",
+      "name": "tslib",
+      "version": "2.8.1",
+      "description": "Runtime library for TypeScript helper functions",
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD"
+          }
+        }
+      ],
+      "purl": "pkg:npm/tslib@2.8.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/Microsoft/TypeScript/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/Microsoft/tslib.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/busboy@1.6.0",
+      "author": "Brian White",
+      "name": "busboy",
+      "version": "1.6.0",
+      "description": "A streaming parser for HTML form data for node.js",
+      "purl": "pkg:npm/busboy@1.6.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/mscdex/busboy#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mscdex/busboy/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+ssh://git@github.com/mscdex/busboy.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/streamsearch@1.1.0",
+      "author": "Brian White",
+      "name": "streamsearch",
+      "version": "1.1.0",
+      "description": "Streaming Boyer-Moore-Horspool searching for node.js",
+      "purl": "pkg:npm/streamsearch@1.1.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/mscdex/streamsearch#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mscdex/streamsearch/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+ssh://git@github.com/mscdex/streamsearch.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/caniuse-lite@1.0.30001720",
+      "author": "Ben Briggs",
+      "name": "caniuse-lite",
+      "version": "1.0.30001720",
+      "description": "A smaller version of caniuse-db, with only the essentials!",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC-BY-4.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/caniuse-lite@1.0.30001720",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/browserslist/caniuse-lite#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/browserslist/caniuse-lite/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/browserslist/caniuse-lite.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/postcss@8.4.31",
+      "author": "Andrey Sitnik",
+      "name": "postcss",
+      "version": "8.4.31",
+      "description": "Tool for transforming styles with JS plugins",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/postcss@8.4.31",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://postcss.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/postcss/postcss/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/postcss/postcss.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/nanoid@3.3.11",
+      "author": "Andrey Sitnik",
+      "name": "nanoid",
+      "version": "3.3.11",
+      "description": "A tiny (116 bytes), secure URL-friendly unique string ID generator",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/nanoid@3.3.11",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/ai/nanoid#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/ai/nanoid/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/ai/nanoid.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/picocolors@1.1.1",
+      "author": "Alexey Raspopov",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/picocolors@1.1.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/alexeyraspopov/picocolors#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/alexeyraspopov/picocolors/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/alexeyraspopov/picocolors.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/source-map-js@1.2.1",
+      "author": "Valentin 7rulnik Semirulnik",
+      "name": "source-map-js",
+      "version": "1.2.1",
+      "description": "Generates and consumes source maps",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:npm/source-map-js@1.2.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/7rulnik/source-map-js"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/7rulnik/source-map-js/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/7rulnik/source-map-js.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/styled-jsx@5.1.6",
+      "name": "styled-jsx",
+      "version": "5.1.6",
+      "description": "Full CSS support for JSX without compromises",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/styled-jsx@5.1.6",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/vercel/styled-jsx#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/styled-jsx/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/styled-jsx.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/client-only@0.0.1",
+      "name": "client-only",
+      "version": "0.0.1",
+      "description": "This is a marker package to indicate that a module can only be used in Client Components.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/client-only@0.0.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://reactjs.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/react@19.1.0",
+      "name": "react",
+      "version": "19.1.0",
+      "description": "React is a JavaScript library for building user interfaces.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/react@19.1.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/facebook/react.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/react-dom@19.1.0",
+      "name": "react-dom",
+      "version": "19.1.0",
+      "description": "React package for working with the DOM.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/react-dom@19.1.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/facebook/react.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/scheduler@0.26.0",
+      "name": "scheduler",
+      "version": "0.26.0",
+      "description": "Cooperative scheduler for the browser environment.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/scheduler@0.26.0",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/facebook/react/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/facebook/react.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/%40img/sharp-win32-x64@0.34.2",
+      "author": "Lovell Fuller",
+      "group": "@img",
+      "name": "sharp-win32-x64",
+      "version": "0.34.2",
+      "description": "Prebuilt sharp for use with Windows x64",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0 AND LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40img/sharp-win32-x64@0.34.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://sharp.pixelplumbing.com"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lovell/sharp/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lovell/sharp.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/%40next/swc-win32-x64-msvc@15.3.3",
+      "group": "@next",
+      "name": "swc-win32-x64-msvc",
+      "version": "15.3.3",
+      "description": "This is the **x86_64-pc-windows-msvc** binary for `@next/swc`",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40next/swc-win32-x64-msvc@15.3.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/vercel/next.js#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/vercel/next.js/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/vercel/next.js.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/color-name@1.1.4",
+      "author": "DY",
+      "name": "color-name",
+      "version": "1.1.4",
+      "description": "A list of color names and its values",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-name@1.1.4",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/colorjs/color-name"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/colorjs/color-name/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+ssh://git@github.com/colorjs/color-name.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/color@4.2.3",
+      "name": "color",
+      "version": "4.2.3",
+      "description": "Color conversion and manipulation with CSS string support",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color@4.2.3",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Qix-/color#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/Qix-/color/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/Qix-/color.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/color-convert@2.0.1",
+      "author": "Heather Arthur",
+      "name": "color-convert",
+      "version": "2.0.1",
+      "description": "Plain color conversion functions",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-convert@2.0.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Qix-/color-convert#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/Qix-/color-convert/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/Qix-/color-convert.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/color-string@1.9.1",
+      "author": "Heather Arthur",
+      "name": "color-string",
+      "version": "1.9.1",
+      "description": "Parser and generator for CSS color strings",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-string@1.9.1",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Qix-/color-string#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/Qix-/color-string/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/Qix-/color-string.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/simple-swizzle@0.2.2",
+      "author": "Qix",
+      "name": "simple-swizzle",
+      "version": "0.2.2",
+      "description": "Simply swizzle your arguments",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/simple-swizzle@0.2.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/qix-/node-simple-swizzle#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/qix-/node-simple-swizzle/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/qix-/node-simple-swizzle.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/is-arrayish@0.3.2",
+      "author": "Qix",
+      "name": "is-arrayish",
+      "version": "0.3.2",
+      "description": "Determines if an object can be used as an array",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-arrayish@0.3.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/qix-/node-is-arrayish#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/qix-/node-is-arrayish/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/qix-/node-is-arrayish.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/detect-libc@2.0.4",
+      "author": "Lovell Fuller",
+      "name": "detect-libc",
+      "version": "2.0.4",
+      "description": "Node.js module to detect the C standard library (libc) implementation family and version",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/detect-libc@2.0.4",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/lovell/detect-libc#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lovell/detect-libc/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/lovell/detect-libc.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/sharp@0.34.2",
+      "author": "Lovell Fuller",
+      "name": "sharp",
+      "version": "0.34.2",
+      "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:npm/sharp@0.34.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://sharp.pixelplumbing.com"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/lovell/sharp/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/lovell/sharp.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/semver@7.7.2",
+      "author": "GitHub Inc.",
+      "name": "semver",
+      "version": "7.7.2",
+      "description": "The semantic version parser used by npm.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:npm/semver@7.7.2",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/npm/node-semver#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/npm/node-semver/issues"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/npm/node-semver.git"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:npm/%40next/env@15.3.3"
+    },
+    {
+      "ref": "pkg:npm/%40swc/counter@0.1.3"
+    },
+    {
+      "ref": "pkg:npm/tslib@2.8.1"
+    },
+    {
+      "ref": "pkg:npm/%40swc/helpers@0.5.15",
+      "dependsOn": [
+        "pkg:npm/tslib@2.8.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/streamsearch@1.1.0"
+    },
+    {
+      "ref": "pkg:npm/busboy@1.6.0",
+      "dependsOn": [
+        "pkg:npm/streamsearch@1.1.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/caniuse-lite@1.0.30001720"
+    },
+    {
+      "ref": "pkg:npm/nanoid@3.3.11"
+    },
+    {
+      "ref": "pkg:npm/picocolors@1.1.1"
+    },
+    {
+      "ref": "pkg:npm/source-map-js@1.2.1"
+    },
+    {
+      "ref": "pkg:npm/postcss@8.4.31",
+      "dependsOn": [
+        "pkg:npm/nanoid@3.3.11",
+        "pkg:npm/picocolors@1.1.1",
+        "pkg:npm/source-map-js@1.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/client-only@0.0.1"
+    },
+    {
+      "ref": "pkg:npm/styled-jsx@5.1.6",
+      "dependsOn": [
+        "pkg:npm/client-only@0.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/next@15.3.3",
+      "dependsOn": [
+        "pkg:npm/%40next/env@15.3.3",
+        "pkg:npm/%40swc/counter@0.1.3",
+        "pkg:npm/%40swc/helpers@0.5.15",
+        "pkg:npm/busboy@1.6.0",
+        "pkg:npm/caniuse-lite@1.0.30001720",
+        "pkg:npm/postcss@8.4.31",
+        "pkg:npm/styled-jsx@5.1.6"
+      ]
+    },
+    {
+      "ref": "pkg:npm/react@19.1.0"
+    },
+    {
+      "ref": "pkg:npm/scheduler@0.26.0"
+    },
+    {
+      "ref": "pkg:npm/react-dom@19.1.0",
+      "dependsOn": [
+        "pkg:npm/scheduler@0.26.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/%40img/sharp-win32-x64@0.34.2"
+    },
+    {
+      "ref": "pkg:npm/%40next/swc-win32-x64-msvc@15.3.3"
+    },
+    {
+      "ref": "pkg:npm/color-name@1.1.4"
+    },
+    {
+      "ref": "pkg:npm/color-convert@2.0.1"
+    },
+    {
+      "ref": "pkg:npm/is-arrayish@0.3.2"
+    },
+    {
+      "ref": "pkg:npm/simple-swizzle@0.2.2",
+      "dependsOn": [
+        "pkg:npm/is-arrayish@0.3.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/color-string@1.9.1",
+      "dependsOn": [
+        "pkg:npm/simple-swizzle@0.2.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/color@4.2.3",
+      "dependsOn": [
+        "pkg:npm/color-convert@2.0.1",
+        "pkg:npm/color-string@1.9.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/detect-libc@2.0.4"
+    },
+    {
+      "ref": "pkg:npm/semver@7.7.2"
+    },
+    {
+      "ref": "pkg:npm/sharp@0.34.2",
+      "dependsOn": [
+        "pkg:npm/semver@7.7.2"
+      ]
+    },
+    {
+      "ref": "pkg:npm/stock-dashboard-ui@0.1.0",
+      "dependsOn": [
+        "pkg:npm/next@15.3.3",
+        "pkg:npm/react@19.1.0",
+        "pkg:npm/react-dom@19.1.0",
+        "pkg:npm/%40img/sharp-win32-x64@0.34.2",
+        "pkg:npm/%40next/swc-win32-x64-msvc@15.3.3",
+        "pkg:npm/color-name@1.1.4",
+        "pkg:npm/color@4.2.3",
+        "pkg:npm/detect-libc@2.0.4",
+        "pkg:npm/sharp@0.34.2"
+      ]
+    }
+  ]
+}

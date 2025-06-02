@@ -6,6 +6,7 @@
     "build": "next build",
     "clean": "rm -rf .next node_modules dist",
     "dev": "next dev --turbopack",
+    "check:licenses": "license-checker --summary --onlyAllow='MIT;Apache-2.0;BSD-2-Clause;BSD-3-Clause'",
     "docs": "npm run start --workspace docs",
     "docs:build": "npm run build --workspace docs",
     "docs:deploy": "npm run deploy --workspace docs",
@@ -24,7 +25,8 @@
     "release": "standard-version",
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
-    "release:major": "standard-version --release-as major"
+    "release:major": "standard-version --release-as major",
+    "sbom": "docker run --rm -v %cd%:/src -w /src cyclonedx/cyclonedx-node -o bom.json"
   },
   "dependencies": {
     "next": "15.3.3",
@@ -34,6 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@cyclonedx/bom": "^4.1.0",
     "@eslint/js": "^9.28.0",
     "@tailwindcss/postcss": "^4.1.8",
     "@testing-library/jest-dom": "^6.6.3",
