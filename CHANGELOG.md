@@ -1,9 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-The format is based on [Conventional Commits](https://www.conventionalcommits.org),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## 0.1.0 (2025-06-02)
+
+### Bug Fixes
+
+- **component:** fix of .husky configuration file ([fbd053d](https://github.com/finsite/stock-dashboard-ui/commit/fbd053da77b130a099b30605196f63434bdff86a))
+- migrate config files to ESM ([715799a](https://github.com/finsite/stock-dashboard-ui/commit/715799a04471f2c60886df8288b7d982fc2dfe1c))
 
 ## [0.1.0] - 2025-05-31
 
