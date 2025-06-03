@@ -1,6 +1,10 @@
-# Changelog
+# 📦 Changelog
+### 0.1.1 (2025-06-02)
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 🧹 Maintenance
+
+* **security:** add SBOM generation and Cosign signing workflows ([82a18dd](https://github.com/finsite/stock-dashboard-ui/commit/82a18dda495679478e11e3a7214ff7e46448cbe6))
 
 ## 0.1.0 (2025-06-02)
 
