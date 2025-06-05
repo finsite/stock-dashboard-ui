@@ -1,4 +1,11 @@
 # 📦 Changelog
+### 0.1.3 (2025-06-05)
+
+
+### 🐛 Bug Fixes
+
+* **security:** Remediate vulnerabilities ([47b0f8d](https://github.com/finsite/stock-dashboard-ui/commit/47b0f8ddc5301ba30a083e17145bd0f0af31f060))
+
 ### 0.1.2 (2025-06-03)
 
 ### 0.1.1 (2025-06-02)
