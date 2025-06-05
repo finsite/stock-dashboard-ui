@@ -1,4 +1,11 @@
 # 📦 Changelog
+### 0.1.3 (2025-06-05)
+
+
+### 🐛 Bug Fixes
+
+* **pollers:** Verifying core functionality with workflows ([b6eb422](https://github.com/finsite/stock-dashboard-ui/commit/b6eb4220f005999c88edff4710881ddc87b95b6a))
+
 ### 0.1.2 (2025-06-03)
 
 ### 0.1.1 (2025-06-02)
