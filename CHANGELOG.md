@@ -1,3 +1,11 @@
+# 📦 Changelog
+### 0.1.4 (2025-06-07)
+
+
+### 🐛 Bug Fixes
+
+* **files:** verify pyproject.toml has all required fields ([f52c000](https://github.com/finsite/stock-dashboard-ui/commit/f52c00028a2fe30b552be115fd3e0b451d5d93c7))
+
 ## Unreleased
 
 ### Fix
