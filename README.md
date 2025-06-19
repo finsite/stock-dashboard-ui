@@ -1,109 +1,84 @@
-# 📊 stock-dashboard-ui
+# Stock Dashboard UI
 
-[![Build](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/build.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/build.yml)
-[![Lint](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/lint.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/lint.yml)
-[![Tests](https://img.shields.io/github/actions/workflow/status/markq/stock-dashboard-ui/test.yml?branch=main)](https://github.com/markq/stock-dashboard-ui/actions/workflows/test.yml)
-[![Release](https://img.shields.io/github/v/release/markq/stock-dashboard-ui)](https://github.com/markq/stock-dashboard-ui/releases)
-[![License](https://img.shields.io/github/license/markq/stock-dashboard-ui)](./LICENSE)
+This repository contains the frontend for the stock analytics dashboard, built using **Next.js**, **React**, **Tailwind CSS**, and **TypeScript**. It displays stock data, sentiment scores, technical indicators, and custom visualizations sourced from backend microservices.
 
----
+## ✅ Features
 
-## 📦 Overview
+- Modular React-based UI with dynamic routing
+- Type-safe frontend using TypeScript
+- Styled with Tailwind CSS for rapid design
+- Integrated with RabbitMQ, InfluxDB, and PostgreSQL via backend APIs
+- Authentication-ready structure (optional future enhancement)
+- Dockerized for local and production deployment
+- Helm chart for Kubernetes deployments with ArgoCD support
 
-**stock-dashboard-ui** is a modern, high-performance web frontend built with:
+## 🗂️ Project Structure
 
-- ⚛️ React 19
-- 🚀 Next.js 15
-- 🎨 Tailwind CSS
-- ✨ TypeScript-first architecture
-- 🐳 Dockerized and CI-integrated
-
-This UI is part of a broader stock analysis and visualization platform.
-
----
+```
+.
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Next.js routes
+│   ├── styles/             # Global CSS (Tailwind)
+│   ├── utils/              # Frontend utility functions
+│   └── types/              # TypeScript interfaces and enums
+├── .github/                # GitHub Actions and workflows
+├── Dockerfile              # Production Docker build
+├── docker-compose.yml      # Local dev environment
+├── Makefile                # Standardized dev tasks
+├── helm/                   # Helm chart for K8s deployment
+└── README.md
+```
 
 ## 🛠️ Local Development
 
 ```bash
-# Install dependencies
-npm install
-
-# Run the dev server
-npm run dev
-
-# Lint and fix
-npm run lint:fix
-
-# Format code
-npm run format
-
-# Type check
-npm run type-check
-
-# Build for production
-npm run build
+make install
+make dev
 ```
 
----
+Or directly:
+
+```bash
+npm install
+npm run dev
+```
 
 ## 🧪 Testing
 
 ```bash
-# Run unit tests (if implemented)
-npm test
+make test
+# or
+npm run test
 ```
 
----
+Unit testing is handled by [Vitest](https://vitest.dev/) and coverage by [c8](https://github.com/bcoe/c8).
 
-## 🚀 Release Workflow
+## 🚀 Deployment
 
-This project uses **Commitizen + standard-version** to manage releases.
-
-```bash
-# Bump version & changelog manually
-make release
-```
-
-This will:
-
-- Generate/update CHANGELOG.md
-- Bump the version in package.json
-- Push the tag and changes to GitHub
-
-Automatic releases also occur via GitHub Actions when pushing to `main`.
-
----
-
-## 🐳 Docker Support
-
-Build a production-ready Docker image:
+### Docker
 
 ```bash
 docker build -t stock-dashboard-ui .
+docker run -p 3000:3000 stock-dashboard-ui
 ```
 
-Images are published to:
+### Kubernetes
 
-```
-ghcr.io/markq/stock-dashboard-ui
-```
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](./LICENSE).
-
----
-
-## 🙋‍♂️ Maintainer
-
-**Mark Quinn**
-[https://github.com/markq](https://github.com/markq)
-
+```bash
+make helm-install
 ```
 
----
+## 🧰 Tooling
 
-Let me know if you'd like this exported as a file or saved into your repo structure.
-```
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vitest](https://vitest.dev/)
+- [ESLint + Prettier](https://eslint.org/)
+- [Commitizen](https://github.com/commitizen/cz-cli)
+
+## 📝 License
+
+Licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).

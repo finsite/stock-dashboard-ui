@@ -1,83 +1,40 @@
-# TODO – Stock Dashboard UI
+# TODO for Stock Dashboard UI
 
-This document outlines the development plan for the `stock-dashboard-ui` project. It includes completed setup steps, enhancements, poller integration points, and future theoretical capabilities (such as recommendations based on analysis data).
+## 1. UI Features
 
----
+- [ ] Add chart visualizations using `recharts` or `chart.js`
+- [ ] Add filter and search controls for stock symbols
+- [ ] Add pagination or infinite scroll for long data lists
+- [ ] Support dark mode toggle
+- [ ] Responsive layout for mobile and tablet devices
 
-## ✅ Completed Setup
+## 2. API Integration
 
-- [x] Project scaffolded with `Next.js 15`, `TypeScript`, `Tailwind CSS`
-- [x] Prettier + ESLint with standard and Tailwind plugins
-- [x] Stylelint integration with Prettier
-- [x] Commitizen + Commitlint + Husky pre-commit hooks
-- [x] Turbopack working with live reload
-- [x] Initial folder structure (`app/`, `components/`, `styles/`)
-- [x] Font setup with `Geist` and `Geist Mono`
-- [x] Working favicon with no conflicts
+- [ ] Connect to backend REST endpoints for live data
+- [ ] Add error handling and loading states for API calls
+- [ ] Add WebSocket or SSE support for live updates
 
----
+## 3. Testing
 
-## 📈 UI/UX Features to Add
+- [ ] Add full unit test coverage for all components
+- [ ] Snapshot tests for reusable components
+- [ ] E2E testing setup with Playwright or Cypress (optional)
 
-- [ ] Create persistent layout component (navbar, sidebar, theme toggle)
-- [ ] Add light/dark theme switching
-- [ ] Responsive layout using Tailwind `container` or grid
-- [ ] Dashboard cards for:
-  - [ ] Price movement
-  - [ ] Candlestick patterns
-  - [ ] Volume/volatility
-  - [ ] Sentiment metrics (news, social, analyst)
-- [ ] Charts using `Recharts` or `React ECharts`
-- [ ] Add skeleton/loading states for all async data
+## 4. Security & Compliance
 
----
+- [ ] Enable REUSE license headers
+- [ ] Enable SBOM and provenance (SLSA/CycloneDX)
+- [ ] Run semgrep static analysis for frontend security
+- [ ] Run `secretlint` to scan for secrets in config files
 
-## 🔌 Backend / Poller Integration
+## 5. Build & Deployment
 
-Each of these features assumes data is being streamed from RabbitMQ (or optionally pulled from an API).
+- [ ] Harden Dockerfile for production
+- [ ] Finalize Helm values for environment-specific config
+- [ ] Add healthcheck endpoint and probe readiness
 
-- [ ] Add API routes (or `getServerSideProps`) to consume data from poller outputs
-  - [ ] Candlestick (`stock-tech-candlestick`)
-  - [ ] Momentum (MACD, RSI)
-  - [ ] Trend (ADX, Parabolic SAR)
-  - [ ] Volatility (ATR, Bollinger Bands)
-  - [ ] Analyst sentiment (e.g., `stock-sent-analyst`)
-  - [ ] News sentiment (e.g., `stock-sent-news`)
-  - [ ] Reddit/Twitter sentiment (e.g., `stock-sent-social`)
-- [ ] Display poller data in UI:
-  - [ ] Tables
-  - [ ] Charts
-  - [ ] Mini-insights or alerts
-- [ ] Include poller update timestamps and health info
-- [ ] Add polling retry and fallback handling
+## 6. Documentation
 
----
-
-## 🧠 Theoretical Features (Signal Generation / Recommendations)
-
-While no purchase action will be taken, the system could offer:
-
-- [ ] Sentiment-weighted scoring system (normalized 0–1 scale)
-- [ ] Buy/sell/hold signal indicator based on:
-  - [ ] Momentum + sentiment convergence
-  - [ ] Strong pattern detection (e.g., bullish engulfing + positive news)
-- [ ] Scorecards per stock ticker with all metrics
-- [ ] Leaderboards for top movers by signal strength
-- [ ] Explainable signals (why a recommendation was generated)
-
----
-
-## ⚙️ Dev Experience Enhancements
-
-- [ ] Add `tsx` or `vitest` for unit/integration testing
-- [ ] Add Storybook for UI component development
-- [ ] Configure CI/CD with GitHub Actions:
-  - [ ] Lint and format checks
-  - [ ] Build preview
-  - [ ] Optionally auto-deploy to Vercel/Cloudflare
-- [ ] Add `.env.local.example` with placeholder variables
-- [ ] Add Swagger/OpenAPI if REST endpoints are used
-
----
-
-## 🗃 Folder Structure Target
+- [ ] Setup Docusaurus for frontend developer documentation
+- [ ] Add storybook support (optional)
+- [ ] Document supported API contracts and expected inputs/outputs
