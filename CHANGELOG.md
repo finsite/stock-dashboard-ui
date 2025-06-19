@@ -1,4 +1,11 @@
 # 📦 Changelog
+### 0.1.5 (2025-06-19)
+
+
+### 🧹 Maintenance
+
+* sync shared files and documentation across all repositories ([772f50b](https://github.com/finsite/stock-dashboard-ui/commit/772f50b42fcb3ab3978c9a2f823038c045317c12))
+
 ### 0.1.4 (2025-06-07)
 
 
