@@ -1,5 +1,5 @@
 # === Base Build Stage ===
-FROM node:20-alpine AS builder
+FROM node:20.19.4-alpine AS builder
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ COPY . .
 RUN npm run build
 
 # === Production Stage ===
-FROM node:20-alpine AS runner
+FROM node:20.19.4-alpine AS runner
 
 WORKDIR /app
 
